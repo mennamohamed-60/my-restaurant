@@ -5,13 +5,20 @@
     scroll-behavior: smooth;
 }
 
-body{
-    background-color: #f7ecde;
+:root {
+
+    --main-background: #f7ecde;
+    --text-color :  rgb(226, 215, 215);
+    --main-color : #70574e;
+
+    
 }
 
-/* :root {
-    
-} */
+body{
+    background-color: var(--main-background);
+}
+
+
 
 header {
     background-image: url(../images/banner-image.jpg);
@@ -47,14 +54,14 @@ header {
 
 .header-contant a{
     text-decoration: none;
-    color: rgb(226, 215, 215);
+    color: var(--text-color);
     font-size: 25px;
     
 
 }
 
 .header-contant button {
-    background-color: #70574e;
+    background-color:var(--main-color) ;
     padding: 10px;
     border: none;
     border-radius: 10px;
@@ -62,7 +69,7 @@ header {
 }
 
 nav {
-    background-color: #70574e;
+    background-color: var(--main-color);
 }
 
 nav div  {
@@ -74,7 +81,7 @@ nav div  {
 }
 nav a{
     text-decoration: none;
-    color: rgb(222, 214, 214);
+    color: var(--text-color);
     padding: 20px;
     font-size: 20px;
 
@@ -120,7 +127,7 @@ nav a{
 .card h3{
     font-size: 30px;
     background-color: green;
-    color: aliceblue;
+    color: var(--text-color);
     padding: 15px;
     
 }
@@ -147,7 +154,7 @@ nav a{
      margin-left: 60px;
      margin-top: 20px;
      border-radius: 5px;
-     color: white;
+     color: var(--text-color);
 
     margin: 30px auto;
 
@@ -213,7 +220,7 @@ form button {
     border-radius: 10px;
     border: none;
 
-    background-color: #70574e;
+    background-color: var(--main-color);
 
 
 
@@ -222,7 +229,7 @@ form button {
 
 form button a{
     text-decoration: none;
-    color: aliceblue;
+    color: var(--text-color);
 
 }
 
@@ -248,7 +255,7 @@ footer{
     margin: 8px;
 }
 footer p{
-    color: #ffffff;
+    color: var(--text-color);
 
 }
 .a-text{
